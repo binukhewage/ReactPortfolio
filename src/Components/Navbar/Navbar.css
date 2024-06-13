@@ -1,0 +1,149 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-menu li img {
+    display: flex;
+    margin: auto;
+}
+
+.nav-connect {
+    padding: 10px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7c25 0.36%, #B923E1 102.06%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.resume:hover {
+    border-color: #B923E1;
+}
+
+.nav-menu li:hover {
+    background: linear-gradient(267deg, #DA7c25 0.36%, #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-mob-open {
+    display: none;
+}
+
+.nav-mob-close {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+
+    .nav-menu {
+        gap: 40px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin: 20px 30px;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mob-open {
+        display: block;
+        cursor: pointer;
+        margin-right: -500px;
+    }
+
+    .nav-mob-close {
+        display: none;
+    }
+
+    .navbar.active .nav-menu {
+        display: flex;
+        right: 0;
+        width: 40%; /* Ensures the menu covers half the screen width */
+    }
+
+    .navbar.active .nav-mob-close {
+        margin-top: 20px;
+        display: block; /* Display close button when navbar is active */
+        margin-right: -200px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0; /* Ensures the menu starts at the very top */
+        right: -50%; /* Adjusted initial right position to -50% */
+        gap: 30px;
+        background-color: #1f0016;
+        width: 50%; /* Ensures the menu has a proper width */
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .nav-menu li {
+        font-size: 30px;
+        padding-left: 20px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .nav-menu li img {
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        margin: 20px 15px;
+    }
+
+    .nav-mob-close {
+        left: 250px;
+    }
+
+    .nav-menu {
+        width: 50%;
+        right: -50%; /* Ensures the initial right position matches the width */
+    }
+
+    .navbar.active .nav-menu {
+        right: 0;
+    }
+
+    .nav-menu li {
+        font-size: 24px;
+    }
+}
