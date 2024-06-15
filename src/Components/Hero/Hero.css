@@ -66,15 +66,10 @@
     margin-bottom: 50px;
 }
 
-.hero-connect{
-    padding: 10px 45px;
-    border-radius: 50px;
-    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    cursor: pointer;
-    
-}
 
 .resume{
+    text-decoration: none;
+    color: white;
     padding: 10px 45px;
     border-radius: 50px;
     border: 2px solid white;
@@ -129,15 +124,15 @@
     border: 2px solid #fff;
     border-radius: 50%;
     font-size: 20px;
-    color: #00abf0;
+    color: #DA7c25;
     text-decoration: none;
     margin-left: 10px;
     transition: 0.5s;
 }
 
 .socialm a:hover{
-    background: #00abf0;
+    background: linear-gradient(267deg, #DA7c25 0.36%, #B923E1 102.06%);
     color: #fff;
-    border-color: #00abf0;
-    box-shadow: 0 0 10px #00abf0;
+    border-color: #DA7c25;
+    box-shadow: 0 0 10px #B923E1;
 }

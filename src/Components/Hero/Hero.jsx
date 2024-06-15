@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Hero/Hero.css'
 import profile_img from '../../assets/IMG_9209.jpg'
+import cv from '../../assets/CV.Final.pdf'
 
 const Hero = () => {
   return (
@@ -13,9 +14,8 @@ const Hero = () => {
                 <a href="https://www.linkedin.com/in/binuk-hewage?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class='bx bxl-linkedin-square' ></i></a>
                 <a href="https://x.com/binukhe?s=21&t=ZZSV_r_GMQwmMBG5dY-0xw"><i class='bx bxl-twitter' ></i></a>
             </div>
-        <div className="hero-action">
-            
-            <div className="resume">Download CV</div>
+        <div className="hero-action"> 
+          <a href={cv} download="Binuk_Hewage_CV.pdf" className="resume">Download CV</a>
         </div>
     </div>
   )
