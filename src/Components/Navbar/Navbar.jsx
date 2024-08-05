@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import '../Navbar/Navbar.css';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/newlogo.svg';
 import underline from '../../assets/nav_underline.svg';
 import menuOpenIcon from '../../assets/menu_open.svg';
 import menuCloseIcon from '../../assets/menu_close.svg';
@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${isMobileMenuOpen ? 'active' : ''}`}>
-      <img src={logo} alt="Logo" />
+      <h1>Binuk Hewage<span className='secname'>.</span></h1> 
       <img
         src={menuOpenIcon}
         alt="Open menu"
